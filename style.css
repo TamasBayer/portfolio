@@ -177,3 +177,33 @@ nav ul li a:hover {
 .used-technology h3, a, p, h1{
     margin: 20px 10px;
 }
+
+/* ===== FOOTER ===== */
+
+footer {
+    clear: both;
+    margin-top: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: rgb(41, 40, 40);
+    color: white;
+    
+}
+
+footer p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-links a{ 
+        font-size: 25px;
+        color: rgb(78, 76, 76);
+        margin: 0px 5px;
+
+        transition: 0.5s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
