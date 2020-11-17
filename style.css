@@ -6,6 +6,15 @@ img {
     width: 100px;
 }
 
+/* ===== TITELS ===== */
+
+
+.titles {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
 /* ===== HEADER ===== */
 
 header {
