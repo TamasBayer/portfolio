@@ -10,8 +10,24 @@ img {
 
 
 .titles {
+    position: relative;
+    font-size: 30px;
+    color: #4070F4;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     text-align: center;
-    margin: 40px 0;
+}
+
+.titles::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40px;
+    background-color: #4070F4;
 }
 
 
