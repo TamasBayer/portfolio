@@ -1,10 +1,10 @@
+html {
+    overflow-x: hidden;
+  }
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-}
-
-img {
-    width: 100px;
 }
 
 /* ===== TITELS ===== */
@@ -107,16 +107,18 @@ nav ul li a:hover {
 
 .about {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     padding: 0 20%;
-    height: 40vh;
+    height: 380px;
 }
 
 .about img {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    min-width: 400px;
     height: 100%;
-    max-height: 400px;
-    padding-right: 200px;
+    min-height: 400px;
+    padding-right: 10%;
 }
 
 .about-text {
@@ -125,6 +127,7 @@ nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
     font-size: 18px;
+    
 }
 
 .about-text p {
@@ -146,7 +149,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: row;
     padding: 0 20%;
-    height: 40vh;
+    height: 380px;
 }
 
 .skill {
@@ -205,8 +208,10 @@ nav ul li a:hover {
 .projects img {
     width: 100%;
     min-width: 500px;
+    max-width: 500px;
     height: 100%;
     min-height: 300px;
+    max-height: 300px;
     padding-right: 5%;
 }
 
@@ -258,6 +263,7 @@ nav ul li a:hover {
 
 .links i:hover {
     color: rgb(64, 112, 244);
+    transition: 0.3s;
 }
 
 #slash-eye {
@@ -298,4 +304,174 @@ footer p {
 
 .footer-links a:hover {
     color: white;
+}
+
+
+/* ===== SMALLER SCREENS ===== */
+
+
+@media(min-width: 1350px) and (max-width: 1760px) {
+
+    .about, .skills, .projects {
+        padding: 0 10%;
+    }
+}
+
+@media(min-width: 1120px) and (max-width: 1350px) {
+
+    .about, .skills, .projects {
+        padding: 0 5%;
+    }
+}
+
+@media(max-width: 1120px) {
+
+    .about, .skills, .projects {
+        padding: 0 0;
+    }
+
+    .project {
+        padding: 0;
+    }
+
+    .about-project p {
+        margin: 10px 5px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    nav ul {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .about {
+        flex-flow: row wrap;
+        text-align: center;
+        margin: 10%;
+        margin-bottom: 350px;
+    }
+
+    .about img {
+        padding: 0;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+
+    .project-left{
+        flex-flow: row wrap;
+    }
+
+    .project-right{
+        flex-flow: row wrap;
+    }
+
+    .project-img-mobile {
+        width: 100%;
+        min-width: 500px;
+        max-width: 500px;
+        height: 100%;
+        min-height: 300px;
+        max-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #mobile-img1 {
+        background: url(./img/work1.jpg) no-repeat center center/cover;
+    }
+
+    #mobile-img2 {
+        background: url(./img/work2.jpg) no-repeat center center/cover;
+    }
+
+    #mobile-img3 {
+        background: url(./img/work3.jpg) no-repeat center center/cover;
+    }
+
+    .project img {
+        display: none;
+    }
+
+    .about-project {
+        align-items: center;
+    }
+
+    .about-project p {
+        text-align: center;
+    }
+
+    .project-right .about-project{
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 520px) {
+    .about {
+        margin-bottom: 400px;
+        }
+}
+
+@media(max-width: 450px) {
+    
+    .about img {
+        width: 200px;
+        min-width: 200px;
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .skills {
+        height: 650px;
+    }
+    
+    .skill {
+        flex: 1 0 31%;
+    }
+
+    .project-img-mobile {
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .project-title {
+        text-align: center;
+    }
+
+    .about-project p {
+        margin: 5px 1px;
+    }
+
+    .used-technology h3{
+        padding: 5px;
+        margin: 10px 5px;
+    }
+
+}
+
+@media(max-width: 300px) {
+    .project-img-mobile {
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+        height: 100px;
+        min-height: 100px;
+        max-height: 100px;
+    }
 }
