@@ -179,8 +179,33 @@ nav ul li a:hover {
     display: flex;
 }
 
+.project {
+    margin: 50px 0;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 8px 0 rgba(173, 173, 173, 0.2), 0 6px 20px 0 rgba(161, 161, 161, 0.19);
+    padding: 40px;
+
+    transition: 0.5s;
+}
+
+.project:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+
+.project h3{
+    margin: 20px 10px;
+}
+
+.project h1 {
+    color: rgb(77, 76, 76);
+    margin: 20px 10px;
+}
+
 .projects img {
-    width: 40%;
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    min-height: 300px;
     padding-right: 10%;
 }
 
@@ -200,16 +225,47 @@ nav ul li a:hover {
     align-items: flex-start;
 }
 
+.project p {
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 20px 10px;
+}
+
 .project-left p {
     text-align: end;
 }
 
-.project-right {
-    margin: 80px 0;
+.text {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(173, 173, 173, 0.2), 0 6px 20px 0 rgba(161, 161, 161, 0.19);
 }
 
-.used-technology h3, a, p, h1{
-    margin: 20px 10px;
+.used-technology h3{
+    color: white;
+    background-color: rgb(64, 112, 244);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.links a{
+    font-size: 26px;
+    color: black;
+    margin: 0px 5px;
+}
+
+.links i:hover {
+    color: rgb(64, 112, 244);
+}
+
+#slash-eye {
+    font-size: 26px;
+    margin: 0px 5px;
+    color: rgb(78, 76, 76);
+}
+
+#slash-eye:hover {
+    color: rgb(78, 76, 76);
 }
 
 /* ===== FOOTER ===== */
