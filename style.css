@@ -234,10 +234,6 @@ nav ul li a:hover {
     margin: 20px 10px;
 }
 
-.project-left p {
-    text-align: end;
-}
-
 .text {
     border-radius: 10px;
     box-shadow: 0 2px 8px 0 rgba(173, 173, 173, 0.2), 0 6px 20px 0 rgba(161, 161, 161, 0.19);
@@ -376,15 +372,15 @@ footer p {
     }
 
     #mobile-img1 {
-        background: url(./img/work1.jpg) no-repeat center center/cover;
+        background: url(./img/project1.jpg) no-repeat center center/cover;
     }
 
     #mobile-img2 {
-        background: url(./img/work2.jpg) no-repeat center center/cover;
+        background: url(./img/project2.jpg) no-repeat center center/cover;
     }
 
     #mobile-img3 {
-        background: url(./img/work3.jpg) no-repeat center center/cover;
+        background: url(./img/project3.jpg) no-repeat center center/cover;
     }
 
     .project img {
